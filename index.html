@@ -1,44 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang = "en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>M S Aditya - Resume</title>
-	<style>
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-			background-color: #f4f4f4;
-			text-align: center;
-		}
-		header {
-			background: #333;
-			color: white;
-			padding: 20px;
-		}
-		section {
-			max-width: 800px;
-			margin: 20px auto;
-			padding: 20px;
-			background: white;
-			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-		}
-		h2 {
-			color: #333;
-		}
-		ul {
-			list-style: none;
-			padding: 0;
-		}
-		li {
-			padding: 5px 0;
-		}
-		.contact a {
-			color: #007BFF;
-			text-decoration: none;
-		}
-	</style>
+	<meta charset = "UTF-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+	<title>Your Name - Resume</title>
+	<link href = "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel = "stylesheet">
+	<link rel = "stylesheet" href = "src/css/styles.css">
+	<script src = "src/js/scripts.js" defer></script>
 </head>
 <body>
 <header>
@@ -46,32 +14,133 @@
 	<p>Tester | Software Engineer | Tech Enthusiast</p>
 </header>
 
-<section id="about">
-	<h2>About Me</h2>
-	<p>A short bio about yourself. Mention your expertise and passion.</p>
-</section>
-
-<section id="skills">
-	<h2>Skills</h2>
-	<ul>
-		<li>HTML, CSS, JavaScript</li>
-		<li>React.js, Node.js</li>
-		<li>Java, Spring Boot</li>
-		<li>SQL, MongoDB</li>
-	</ul>
-</section>
-
-<section id="experience">
-	<h2>Experience</h2>
-	<p><strong>Job Title</strong> - Company Name (Year - Year)</p>
-	<p>Brief description of your role and responsibilities.</p>
-</section>
-
-<section id="contact" class="contact">
-	<h2>Contact</h2>
-	<p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-	<p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
-	<p>GitHub: <a href="https://github.com/yourgithub" target="_blank">github.com/yourgithub</a></p>
-</section>
+<div class = "container">
+	<section id = "about">
+		<h2>About Me</h2>
+		<p>A passionate developer with expertise in modern web technologies.</p>
+	</section>
+	
+	<section id = "skills" class = "skills">
+		<h2>Skills</h2>
+		<h3 class = "expandable">Testing Frameworks <span class = "icon">▶</span></h3>
+		<div class = "content">
+			<h4 class = "expandable">UI Testing <span class = "icon">▶</span></h4>
+			<ul class = "content">
+				<li>Selenium + Java + TestNG + Selenium Grid
+					<div class = "rating">
+						<div class = "filled" style = "width: 100%;"></div>
+					</div>
+				</li>
+				<li>Cypress + Mocha + Chai
+					<div class = "rating">
+						<div class = "filled" style = "width: 75%;"></div>
+					</div>
+				</li>
+				<li>Selenium + Python + Pytest
+					<div class = "rating">
+						<div class = "filled" style = "width: 100%;"></div>
+					</div>
+				</li>
+				<li>Playwright + JavaScript
+					<div class = "rating">
+						<div class = "filled" style = "width: 50%;"></div>
+					</div>
+				</li>
+			</ul>
+			<h4 class = "expandable">API Testing <span class = "icon">▶</span></h4>
+			<ul class = "content">
+				<li>Java + RESTAssured
+					<div class = "rating">
+						<div class = "filled" style = "width: 100%;"></div>
+					</div>
+				</li>
+				<li>POSTMAN
+					<div class = "rating">
+						<div class = "filled" style = "width: 75%;"></div>
+					</div>
+				</li>
+			</ul>
+			<h4 class = "expandable">Mobile Testing <span class = "icon">▶</span></h4>
+			<ul class = "content">
+				<li>Java + Appium
+					<div class = "rating">
+						<div class = "filled" style = "width: 100%;"></div>
+					</div>
+				</li>
+				<li>Maestro
+					<div class = "rating">
+						<div class = "filled" style = "width: 75%;"></div>
+					</div>
+				</li>
+			</ul>
+			<h4 class = "expandable">Performance Testing <span class = "icon">▶</span></h4>
+			<ul class = "content">
+				<li>JMeter
+					<div class = "rating">
+						<div class = "filled" style = "width: 75%;"></div>
+					</div>
+				</li>
+				<li>Locust + Python
+					<div class = "rating">
+						<div class = "filled" style = "width: 75%;"></div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		
+		<h3 class = "expandable">Languages <span class = "icon">▶</span></h3>
+		<div class = "content">
+			<ul>
+				<li>Java
+					<div class = "rating">
+						<div class = "filled" style = "width: 70%;"></div>
+					</div>
+				</li>
+				<li>JavaScript
+					<div class = "rating">
+						<div class = "filled" style = "width: 50%;"></div>
+					</div>
+				</li>
+				<li>Python
+					<div class = "rating">
+						<div class = "filled" style = "width: 50%;"></div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<h3 class = "expandable">CI/CD tools <span class = "icon">▶</span></h3>
+		<div class = "content">
+			<ul>
+				<li>For Version Control - GitHub</li>
+				<li>Pipelines - Jenkins, GitHub Actions, Azure DevOps</li>
+				<li>IBM UCD</li>
+				<li>Artifactory</li>
+				<li>Monitoring Tools - Splunk, Pingdom, Datadog</li>
+			</ul>
+		</div>
+	</section>
+	
+	<section id = "experience" class = "experience">
+		<h2>Experience</h2>
+		<ul>
+			<li><strong>Software Engineer</strong> - Company Name (2022 - Present)</li>
+			<li><strong>Web Developer</strong> - Startup XYZ (2019 - 2022)</li>
+		</ul>
+	</section>
+	
+	<section id = "contact" class = "contact">
+		<h2>Contact</h2>
+		<p>Phone: <span class = "phone-number">+91 7259984105</span></p>
+		<p>Email: <a href = "adityamallela.1988@gmail.com">adityamallela.1988@gmail.com</a></p>
+		<p>LinkedIn: <a href = "https://www.linkedin.com/in/aditya-mallela-b61aa84a/" target = "_blank">linkedin.com/in/aditya-mallela</a>
+		</p>
+		<p>GitHub: <a href = "https://github.com/bondinthepond" target = "_blank">github.com/bondinthepond</a></p>
+	</section>
+	<section id="download" class="download">
+		<h2>Download Resume</h2>
+		<p>Click to download my resume:
+		<a href="src/resume/M_S_Aditya_Resume.pdf" download class="download-btn">Download Resume</a></p>
+	</section>
+</div>
 </body>
 </html>
