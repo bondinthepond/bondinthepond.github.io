@@ -14,10 +14,16 @@ function App() {
 			<Header/>
 			<div className = "container">
 				<About/>
+			</div>
+			<div className = "container">
 				<TechnicalSkills/>
 				<ManagementSkills/>
 				<Experience/>
+			</div>
+			<div className = "container">
 				<Contact/>
+			</div>
+			<div className = "container">
 				<Download/>
 			</div>
 		</div>

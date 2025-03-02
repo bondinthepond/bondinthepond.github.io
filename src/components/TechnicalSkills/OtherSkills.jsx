@@ -23,6 +23,10 @@ function OtherSkills() {
 			{visible.otherSkills && <div className = "content">
 				<ul>
 					<li>Cloud - Azure, GCP</li>
+					<li>Distributed Systems & Microservices Architecture</li>
+					<li>Caching systems - Redis, Varnish, Memcached</li>
+					<li>Kafka</li>
+					<li>Solr and Elastic Search</li>
 					<li>SEO Tools - Google Search Console, Page Speed Insights, Screaming Frog, SEM Rush</li>
 					<li>Foundations of Gen AI based systems, Prompt Engineering, Chatbots, Agents</li>
 				</ul>

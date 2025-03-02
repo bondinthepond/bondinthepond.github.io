@@ -3,6 +3,7 @@ import Languages from "../TechnicalSkills/Languages.jsx";
 import CICDSkills from "../TechnicalSkills/CICDSkills.jsx";
 import OtherSkills from "../TechnicalSkills/OtherSkills.jsx";
 import React, {useState} from "react";
+import DevelopmentSkills from "../TechnicalSkills/DevelopmentSkills.jsx";
 
 
 function TechnicalSkills() {
@@ -26,6 +27,7 @@ function TechnicalSkills() {
 			{visible.technicalSkills && <TestingSkills/>}
 			{visible.technicalSkills && <Languages/>}
 			{visible.technicalSkills && <CICDSkills/>}
+			{visible.technicalSkills && <DevelopmentSkills/>}
 			{visible.technicalSkills && <OtherSkills/>}
 		
 		
