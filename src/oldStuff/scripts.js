@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
 	document.querySelectorAll(".expandable").forEach(header => {
-		let icon = header.querySelector(".icon");
+		const icon = header.querySelector(".icon");
 		header.style.cursor = "pointer";
 		header.addEventListener("click", function () {
-			let content = this.nextElementSibling;
+			const content = this.nextElementSibling;
 			if (content.style.display === "none" || content.style.display === "") {
 				content.style.display = "block";
 				icon.textContent = "▼"; // Expanded state

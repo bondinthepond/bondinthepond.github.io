@@ -37,7 +37,7 @@ h3 {
 }
 
 h4 {
-    padding: 20px;
+    padding-bottom: 10px;
 }
 
 .skills, .experience {
@@ -113,18 +113,40 @@ h4 {
     filter: brightness(0.8);
 }
 
-.content{
+/*.content{*/
+/*    display: none;*/
+/*}*/
+
+.innerContent {
     display: none;
 }
 
-.innerContent{
-    display: none;
-}
-
-.download{
+.download {
     padding: 20px;
 }
 
-.download-btn{
+.download-btn {
     background: #f3d008;
 }
+
+.filled {
+    height: 10px;
+    border-radius: 5px;
+    text-align: left;
+    color: white;
+    font-size: 8px;
+    line-height: 10px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+/*.hover {*/
+/*    display: none;*/
+/*}*/
+
+/*.hover:hover {*/
+/*    display: block;*/
+/*    color: red;*/
+/*}*/
