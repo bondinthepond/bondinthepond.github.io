@@ -1,59 +1,48 @@
-# React + TypeScript + Vite
+# M S Aditya Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Professional portfolio site for M S Aditya, focused on Quality Engineering leadership, Platform Quality Engineering, automation strategy, quality transformation, and FinTech platform quality.
 
-Currently, two official plugins are available:
+## Project Structure
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md)
-  uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast
-  Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-	                               extends: [
-		                               // Remove ...tseslint.configs.recommended and replace with this
-		                               ...tseslint.configs.recommendedTypeChecked,
-		                               // Alternatively, use this for stricter rules
-		                               ...tseslint.configs.strictTypeChecked,
-		                               // Optionally, add this for stylistic rules
-		                               ...tseslint.configs.stylisticTypeChecked,
-	                               ],
-	                               languageOptions: {
-		                               // other options...
-		                               parserOptions: {
-			                               project: ['./tsconfig.node.json', './tsconfig.app.json'],
-			                               tsconfigRootDir: import.meta.dirname,
-		                               },
-	                               },
-                               })
+```text
+src/
+  App.jsx                         Page assembly
+  main.jsx                        React entry point
+  styles.css                      Site styling
+  data/
+    portfolioData.js              All editable portfolio content
+  components/
+    portfolio/                    Current site sections
+public/
+  resume/
+    Aditya_Resume.pdf             Resume served by the View Resume button
 ```
 
-You can also
-install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x)
-and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom)
-for React-specific lint rules:
+## Updating Content
 
-```js
-// eslint.config.oldStuff
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Most text lives in `src/data/portfolioData.js`.
 
-export default tseslint.config({
-	                               plugins: {
-		                               // Add the react-x and react-dom plugins
-		                               'react-x': reactX,
-		                               'react-dom': reactDom,
-	                               },
-	                               rules: {
-		                               // other rules...
-		                               // Enable its recommended typescript rules
-		                               ...reactX.configs['recommended-typescript'].rules,
-		                               ...reactDom.configs.recommended.rules,
-	                               },
-                               })
+Use that file to update:
+
+- impact stats
+- skills
+- transformation stories
+- experience timeline
+- playbook ideas
+- contact links
+
+Use `src/components/portfolio/Hero.jsx` for the hero headline and summary card.
+
+## Local Development
+
+```bash
+npm run dev
 ```
+
+## Production Build
+
+```bash
+npm run build
+```
+
+The site is built with React and Vite.
