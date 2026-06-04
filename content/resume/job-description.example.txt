@@ -1,0 +1,8 @@
+Paste a job description here when you want to generate a more targeted resume.
+
+Example focus:
+
+Director of Quality Engineering role requiring Platform Quality Engineering,
+automation strategy, quality governance, release readiness, quality metrics,
+test automation frameworks, Java, Selenium, REST Assured, Kafka, CI/CD,
+team building, mentoring, and FinTech domain experience.
