@@ -1,167 +1,245 @@
+:root {
+	--bg: #f5f7fb;
+	--surface: #ffffff;
+	--surface-soft: #eef3f8;
+	--text: #102033;
+	--muted: #587089;
+	--border: #d8e2ec;
+	--accent: #0f4c81;
+	--accent-soft: #e6f0f8;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
 }
 
 body {
-    background-color: #002b36; /* Dark Blue-Green Background */
-    color: white;
-    text-align: center;
+	margin: 0;
+	font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+	background: var(--bg);
+	color: var(--text);
 }
 
-header {
-    background: linear-gradient(135deg, #009688, #ffeb3b); /* Green to Yellow */
-    padding: 40px;
-    box-shadow: 0px 5px 15px rgba(255, 235, 59, 0.3);
-    color: #002b36;
+a {
+	color: inherit;
+	text-decoration: none;
 }
 
-.container {
-    max-width: 900px;
-    margin: 40px auto;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 5px 20px rgba(255, 255, 255, 0.2);
+.page-shell {
+	width: min(1120px, calc(100% - 32px));
+	margin: 0 auto;
+	padding: 32px 0 56px;
 }
 
-h1, h2 {
-    color: #ffeb3b; /* Yellow for Headings */
+.hero,
+.section {
+	background: var(--surface);
+	border: 1px solid var(--border);
+	border-radius: 12px;
+}
+
+.hero {
+	display: grid;
+	grid-template-columns: 1.4fr 0.9fr;
+	gap: 24px;
+	padding: 32px;
+}
+
+.eyebrow {
+	margin: 0 0 10px;
+	text-transform: uppercase;
+	letter-spacing: 0;
+	font-size: 0.78rem;
+	font-weight: 700;
+	color: var(--accent);
+}
+
+h1,
+h2,
+h3,
+p {
+	margin-top: 0;
+}
+
+h1 {
+	font-size: clamp(2rem, 3vw, 3.4rem);
+	line-height: 1.05;
+	margin-bottom: 16px;
+	max-width: 12ch;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-bottom: 0;
 }
 
 h3 {
-    color: #ff971b;
-    padding: 10px;
+	font-size: 1.05rem;
+	margin-bottom: 8px;
 }
 
-h4 {
-    padding-bottom: 10px;
+.hero-text,
+.timeline-item p,
+.card p {
+	color: var(--muted);
+	line-height: 1.65;
 }
 
-.skills, .experience {
-    text-align: left;
-    padding: 20px;
+.hero-text {
+	max-width: 60ch;
+	font-size: 1.05rem;
 }
 
-.skills ul, .experience ul {
-    list-style: none;
-    padding: 0;
+.hero-actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+	margin-top: 24px;
 }
 
-.skills li {
-    position: relative;
-    margin: 10px 0;
-    font-size: 18px;
-    font-weight: bold;
-    padding-bottom: 10px;
+.button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 44px;
+	padding: 0 16px;
+	border-radius: 10px;
+	border: 1px solid transparent;
+	font-weight: 600;
 }
 
-.rating {
-    width: 100%;
-    height: 8px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 5px;
-    overflow: hidden;
-    margin-top: 5px;
+.button-primary {
+	background: var(--accent);
+	color: white;
 }
 
-.filled {
-    height: 100%;
-    background: #ffeb3b; /* Yellow */
-    transition: width 0.5s ease-in-out;
+.button-secondary {
+	background: var(--accent-soft);
+	border-color: #bfd3e6;
+	color: var(--accent);
 }
 
-.skills li:hover .filled {
-    background: #009688; /* Green on hover */
+.button-ghost {
+	border-color: var(--border);
+	background: transparent;
+	color: var(--text);
 }
 
-.skills li, .experience li {
-    background: rgba(0, 150, 136, 0.5); /* Greenish Blue */
-    padding: 10px;
-    margin: 5px 0;
-    border-radius: 5px;
-    transition: 0.3s;
+.hero-panel {
+	background: var(--surface-soft);
+	border-radius: 12px;
+	padding: 20px;
 }
 
-.skills li:hover, .experience li:hover {
-    background: rgba(0, 150, 136, 0.8);
+.panel-label,
+.timeline-period {
+	color: var(--muted);
 }
 
-.contact {
-    padding: 20px;
-    align-content: center;
+.stat-list {
+	margin: 0;
+	padding-left: 18px;
+	display: grid;
+	gap: 12px;
+	line-height: 1.5;
 }
 
-.contact-1 {
-    padding-top: 20px;
+.section {
+	margin-top: 20px;
+	padding: 24px 32px 32px;
 }
 
-.contact a {
-    color: #ffeb3b; /* Yellow Links */
-    text-decoration: none;
-    font-weight: bold;
+.section-heading {
+	margin-bottom: 18px;
 }
 
-.contact span {
-    color: #ffeb3b; /* Yellow Links */
-    text-decoration: none;
-    font-weight: bold;
+.pill-grid,
+.card-grid {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 14px;
 }
 
-
-.contact a:hover {
-    text-decoration: underline;
-    color: #00bcd4; /* Light Blue Hover */
+.pill,
+.card,
+.timeline-item {
+	border: 1px solid var(--border);
+	border-radius: 10px;
+	background: #fff;
 }
 
-.animated-bg {
-    background: url('https://source.unsplash.com/1600x900/?technology,abstract,digital') center/cover no-repeat;
-    height: 200px;
-    filter: brightness(0.8);
+.pill {
+	padding: 14px 16px;
+	font-weight: 600;
 }
 
-/*.content{*/
-/*    display: none;*/
-/*}*/
-
-.innerContent {
-    display: none;
+.card {
+	padding: 18px;
+	min-height: 130px;
 }
 
-.download {
-    padding-top: 20px;
-    padding-bottom: 20px;
+.timeline {
+	display: grid;
+	gap: 14px;
 }
 
-.download-btn {
-    background: #f3d008;
+.timeline-item {
+	display: grid;
+	grid-template-columns: 260px 1fr;
+	gap: 20px;
+	padding: 18px;
 }
 
-.filled {
-    height: 10px;
-    border-radius: 5px;
-    text-align: left;
-    color: white;
-    font-size: 8px;
-    line-height: 10px;
+.timeline-role {
+	font-weight: 700;
+	margin-bottom: 6px;
 }
 
-.tooltip:hover .tooltiptext {
-    visibility: visible;
+.timeline-company,
+.timeline-period {
+	margin-bottom: 6px;
 }
 
-.experience {
-    text-align: left;
-    font-size: 0px;
+.contact-section {
+	display: grid;
+	gap: 12px;
 }
 
-/*.hover {*/
-/*    display: none;*/
-/*}*/
+.contact-links {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px;
+}
 
-/*.hover:hover {*/
-/*    display: block;*/
-/*    color: red;*/
-/*}*/
+.contact-links a {
+	color: var(--accent);
+	font-weight: 600;
+}
+
+@media (max-width: 860px) {
+	.hero,
+	.timeline-item,
+	.pill-grid,
+	.card-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.page-shell {
+		width: min(100% - 20px, 1120px);
+		padding-top: 16px;
+	}
+
+	.hero,
+	.section {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	h1 {
+		max-width: none;
+	}
+}
