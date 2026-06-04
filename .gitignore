@@ -11,6 +11,8 @@ node_modules
 dist
 dist-ssr
 *.local
+content/resume/generated/
+content/resume/job-description.txt
 
 # Editor directories and files
 .vscode/*
