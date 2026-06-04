@@ -188,6 +188,7 @@ h3 {
 .card-title,
 .label,
 .role,
+.team,
 .period {
 	color: var(--muted);
 	font-size: 0.88rem;
@@ -337,6 +338,11 @@ h3 {
 .role {
 	margin-bottom: 6px;
 	color: var(--blue);
+}
+
+.team {
+	margin-bottom: 6px;
+	color: var(--teal);
 }
 
 .period {

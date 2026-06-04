@@ -2,18 +2,20 @@ import React from "react";
 import "./styles.css";
 
 const stats = [
-	{value: "14+", label: "Years in software and quality engineering"},
-	{value: "12", label: "Member QA / QE team led at Quotient"},
+	{value: "15+", label: "Years in software and quality engineering"},
+	{value: "PQE", label: "Platform Quality Engineering team at EquiLend"},
+	{value: "FinTech", label: "Securities lending, post-trade, settlements, and rerates"},
 	{value: "90%", label: "Automation target reached from an 80% manual base"},
-	{value: "84", label: "Releases coordinated in four months"},
 ];
 
 const leadershipStrengths = [
+	"Building and scaling India QE capability",
 	"Quality transformation strategy",
 	"Platform Quality Engineering",
+	"Federated QE operating model",
 	"Automation roadmap and governance",
+	"Quality metrics and dashboarding",
 	"Release readiness and quality gates",
-	"Cross-functional engineering leadership",
 	"Hiring, mentoring, reviews, and 1:1s",
 ];
 
@@ -22,45 +24,72 @@ const skillGroups = [
 		title: "Quality Engineering",
 		items: [
 			"Test strategy and planning",
-			"Test automation strategy",
+			"Xray / Jira-based test management",
 			"Defect triage and quality governance",
 			"Test data and environment management",
-			"Feature prioritization for automation",
+			"Traceability, quality baselines, and maturity assessment",
+			"Shift-left, risk-based testing, and test pyramid thinking",
 		],
 	},
 	{
 		title: "Automation and Tools",
 		items: [
-			"Selenium, TestNG, Selenium Grid",
-			"REST Assured, Appium",
-			"Playwright, Pytest",
+			"Java, Selenium, Cucumber, TestNG, Gradle",
+			"REST Assured, API, database, and end-to-end automation",
+			"Kafka, IBM MQ, AWS SQS, and queue validation",
+			"Jenkins, CI/CD automation, and regression health",
 			"JMeter, Locust, Lighthouse",
-			"Splunk, Pingdom, Datadog",
 		],
 	},
 	{
 		title: "Engineering Platforms",
 		items: [
-			"Java, Spring Boot, React, Node.js",
-			"Microservices and distributed systems",
-			"Azure, AWS, GCP",
-			"Jenkins, GitHub Actions, Azure DevOps",
-			"Kafka, Redis, Solr, Elasticsearch",
+			"Distributed, event-driven systems",
+			"Hybrid cloud and on-prem infrastructure",
+			"Oracle DB, APIs, messaging, and data integration",
+			"Microservices, Spring Boot, React, and Node.js",
+			"Azure, AWS, GCP, Kafka, Redis, Solr, Elasticsearch",
 		],
 	},
 	{
 		title: "Product and Delivery",
 		items: [
+			"Team building, hiring, onboarding, and interview rubrics",
 			"Roadmap planning and estimation",
-			"Risk assessment and budgeting",
+			"QE capability-building plans",
 			"Scrum and Kanban delivery",
-			"SEO quality analysis",
-			"Stakeholder communication",
+			"Leadership reporting and dashboarding",
+			"Manual QA to automation-first coaching",
+		],
+	},
+	{
+		title: "FinTech Domain",
+		items: [
+			"Securities lending and post-trade workflows",
+			"Trading, settlements, rerates, and regulatory flows",
+			"NGT, ECS, 1Source, PTS, and related platforms",
+			"Message-heavy validation across Kafka, MQ, SQS, APIs, and databases",
+			"Quality engineering for complex business-critical workflows",
 		],
 	},
 ];
 
 const transformations = [
+	{
+		title: "Platform QE Function at EquiLend",
+		context: "EquiLend is forming a Platform Quality Engineering model to support standards, governance, maturity, and enablement across application teams.",
+		impact: "Helping define the PQE charter, operating model, responsibilities, governance structure, and federated QE model.",
+	},
+	{
+		title: "India QE Capability Building",
+		context: "The organization is scaling quality engineering capability in India with stronger automation ownership and engineering discipline.",
+		impact: "Building the team through hiring, mentoring, onboarding practices, interview rubrics, and capability-building plans.",
+	},
+	{
+		title: "Quality Metrics and Dashboarding",
+		context: "Leadership needs clearer visibility into automation coverage, release readiness, execution health, flaky tests, and quality trends.",
+		impact: "Contributing to the Platform QE Dashboard vision and data-driven reporting across applications.",
+	},
 	{
 		title: "Automation Transformation",
 		context: "A manual-heavy testing model was slowing coverage and release confidence.",
@@ -85,6 +114,33 @@ const transformations = [
 
 const experience = [
 	{
+		company: "EquiLend",
+		role: "Associate Director, Quality Engineering Manager",
+		team: "Platform Quality Engineering Team",
+		period: "Apr 2025 - Current",
+		summary:
+			"Building and operationalizing Platform Quality Engineering capability for securities lending and post-trade FinTech platforms.",
+		highlights: [
+			"Building and scaling the India Quality Engineering capability through hiring, mentoring, onboarding, interview rubrics, and QE capability plans.",
+			"Playing a key role in forming the Platform Quality Engineering function, including charter, operating model, responsibilities, standards, and governance.",
+			"Supporting a federated QE model where QEs are embedded in scrum teams while PQE provides standards, maturity models, enablement, and governance.",
+			"Driving quality transformation across test management, automation, release readiness, reporting, and engineering practices.",
+			"Helping define automation strategy across UI, API, database, queues, Kafka, AWS SQS, IBM MQ, and end-to-end business flows.",
+			"Supporting quality engineering for securities lending, post-trade, rerates, settlements, NGT, ECS, 1Source, PTS, and related platforms.",
+		],
+	},
+	{
+		company: "Career Break",
+		role: "Child care break",
+		period: "Apr 2024 - Apr 2025",
+		summary:
+			"Took an intentional child care break while continuing to stay close to modern quality engineering, distributed systems, JavaScript technologies, and foundational AI concepts.",
+		highlights: [
+			"Assisted a stealth-mode AI startup with end-to-end testing processes, tools, and quality best practices.",
+			"Continued hands-on exploration of CI/CD, AI product quality, prompt engineering, chatbots, and agents.",
+		],
+	},
+	{
 		company: "Quotient Technology",
 		role: "Engineering Manager QA",
 		period: "Nov 2017 - Apr 2024",
@@ -96,17 +152,6 @@ const experience = [
 			"Drove shift-left collaboration across developers, designers, product owners, and quality engineers.",
 			"Architected and developed Coupon Codes using Java Spring Boot microservices and React.",
 			"Mentored engineers, set goals, supported OKRs, and partnered with HR and senior leadership on hiring and planning.",
-		],
-	},
-	{
-		company: "Career Break",
-		role: "Learning, family, and advisory work",
-		period: "Apr 2024 - Current",
-		summary:
-			"Used the break intentionally for childcare, personal well-being, and focused learning in distributed systems, JavaScript technologies, and foundational AI concepts.",
-		highlights: [
-			"Assisted a stealth-mode AI startup with end-to-end testing processes, tools, and quality best practices.",
-			"Continued hands-on exploration of CI/CD, AI product quality, prompt engineering, chatbots, and agents.",
 		],
 	},
 	{
@@ -158,7 +203,7 @@ function App() {
 	return (
 		<div className="site-shell">
 			<nav className="top-nav" aria-label="Primary navigation">
-				<a className="brand" href="#top">Aditya Mallela</a>
+				<a className="brand" href="#top">Aditya M S</a>
 				<div className="nav-links">
 					<a href="#impact">Impact</a>
 					<a href="#skills">Skills</a>
@@ -169,11 +214,11 @@ function App() {
 
 			<header className="hero" id="top">
 				<div className="hero-content">
-					<p className="eyebrow">Quality Engineering Leader</p>
-					<h1>Building quality organizations that improve how products ship.</h1>
+					<p className="eyebrow">M S Aditya</p>
+					<h1>Quality Engineering Transformation Leader</h1>
 					<p className="hero-text">
-						I lead quality transformation across product engineering teams, combining automation,
-						platform thinking, release governance, metrics, and hands-on engineering depth.
+						Building modern Quality Engineering organizations through Platform QE,
+						automation strategy, governance, metrics, and engineering excellence.
 					</p>
 					<div className="hero-actions">
 						<a className="button button-primary" href="/resume/Aditya_Resume.pdf" target="_blank" rel="noreferrer">
@@ -189,10 +234,11 @@ function App() {
 				</div>
 				<aside className="hero-card" aria-label="Profile summary">
 					<p className="card-title">Current positioning</p>
-					<h2>Director / Head of QA track</h2>
+					<h2>Associate Director, Quality Engineering Manager</h2>
 					<p>
-						Focused on Platform Quality Engineering, automation strategy, release maturity,
-						and practical leadership for consumer internet and fintech product teams.
+						Leading within the Platform Quality Engineering team at EquiLend, focused on
+						QE capability building, federated quality governance, automation strategy,
+						metrics, and FinTech platform quality.
 					</p>
 				</aside>
 			</header>
@@ -271,6 +317,7 @@ function App() {
 								<div className="experience-meta">
 									<p className="role">{job.role}</p>
 									<h3>{job.company}</h3>
+									{job.team && <p className="team">{job.team}</p>}
 									<p className="period">{job.period}</p>
 								</div>
 								<div>
