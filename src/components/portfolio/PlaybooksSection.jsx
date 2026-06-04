@@ -4,8 +4,8 @@ function PlaybooksSection() {
 	return (
 		<section className="section two-column">
 			<div>
-				<p className="eyebrow">Future platform content</p>
-				<h2>Playbooks to add next</h2>
+				<p className="eyebrow">Thought Leadership</p>
+				<h2>Playbooks and working models</h2>
 			</div>
 			<div className="playbook-grid">
 				{playbooks.map((item) => (

@@ -7,6 +7,7 @@
     "generate": "node scripts/generatePortfolioData.mjs && node scripts/generateResume.mjs",
     "generate:portfolio": "node scripts/generatePortfolioData.mjs",
     "generate:resume": "node scripts/generateResume.mjs",
+    "resume:pdf": "node scripts/resumeMarkdownToPdf.mjs",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",

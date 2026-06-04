@@ -4,11 +4,12 @@ export const profile = {
 	"name": "M S Aditya",
 	"navName": "M S Aditya",
 	"heroEyebrow": "M S Aditya",
-	"title": "Quality Engineering Transformation Leader | Technology Leader",
+	"title": "Quality Engineering Transformation Leader",
+	"heroFocusLine": "Platform QE | AI-Enabled Engineering | Quality at Scale",
 	"subheadline": "Building modern Quality Engineering organizations through Platform QE, automation strategy, governance, metrics, and engineering excellence.",
 	"resumePath": "/resume/Aditya_Resume.pdf",
-	"currentPositionTitle": "Associate Director, Quality Engineering Manager",
-	"currentPositionSummary": "Leading the Platform Quality Engineering team at EquiLend, focused on QE capability building, federated quality governance, automation strategy, metrics, and platform quality.",
+	"currentPositionTitle": "Associate Director, Quality Engineering Manager | Platform Quality",
+	"currentPositionSummary": "Leading the Platform Quality Engineering team at EquiLend, focused on QE capability building, federated quality governance, automation strategy, metrics, AI-assisted quality engineering, and engineering platform quality.",
 	"email": "adityamallela.1988@gmail.com",
 	"phone": "+91 7259984105",
 	"linkedin": "https://www.linkedin.com/in/aditya-mallela-b61aa84a/",
@@ -17,16 +18,28 @@ export const profile = {
 
 export const navLinks = [
 	{
-		"href": "#impact",
-		"label": "Impact"
+		"href": "#leadership",
+		"label": "Leadership"
 	},
 	{
-		"href": "#skills",
-		"label": "Skills"
+		"href": "#focus",
+		"label": "Focus"
+	},
+	{
+		"href": "#transformation",
+		"label": "Transformation"
 	},
 	{
 		"href": "#experience",
 		"label": "Experience"
+	},
+	{
+		"href": "#domain",
+		"label": "Domain"
+	},
+	{
+		"href": "#technology",
+		"label": "Technology"
 	},
 	{
 		"href": "#contact",
@@ -37,19 +50,33 @@ export const navLinks = [
 export const stats = [
 	{
 		"value": "15+",
-		"label": "Years in software and quality engineering"
+		"label": "Years Experience",
+		"detail": "Quality engineering, automation, and technology leadership."
+	},
+	{
+		"value": "5+",
+		"label": "Years Leadership",
+		"detail": "Building teams, mentoring engineers, and driving delivery."
+	},
+	{
+		"value": "10+",
+		"label": "Products & Platforms",
+		"detail": "Quality governance across a diverse product portfolio."
+	},
+	{
+		"value": "Platform",
+		"label": "Builder",
+		"detail": "Built quality platforms, dashboards, and engineering tools."
 	},
 	{
 		"value": "PQE",
-		"label": "Platform Quality Engineering team at EquiLend"
+		"label": "Transformation",
+		"detail": "Driving governance, maturity, and quality transformation."
 	},
 	{
-		"value": "FinTech",
-		"label": "Securities lending, post-trade, settlements, and rerates"
-	},
-	{
-		"value": "90%",
-		"label": "Automation target reached from an 80% manual base"
+		"value": "3",
+		"label": "Industry Domains",
+		"detail": "Securities lending, ECommerce, and supply chain management"
 	}
 ];
 
@@ -62,6 +89,25 @@ export const leadershipStrengths = [
 	"Quality metrics and dashboarding",
 	"Release readiness and quality gates",
 	"Hiring, mentoring, reviews, and 1:1s"
+];
+
+export const currentFocus = [
+	{
+		"title": "Platform Quality Engineering",
+		"description": "Building centralized QE capabilities that define standards, enable teams, and drive consistency across product portfolios."
+	},
+	{
+		"title": "Quality Transformation",
+		"description": "Moving teams from traditional QA models to engineering-led quality ownership through governance, maturity, and federated QE."
+	},
+	{
+		"title": "Engineering Platforms",
+		"description": "Architecting dashboards, automation frameworks, reporting systems, and tools that improve decisions."
+	},
+	{
+		"title": "AI-Enabled Quality Engineering",
+		"description": "Applying AI to test design, test automation, reporting, documentation, defect analysis, and engineering workflows."
+	}
 ];
 
 export const skillGroups = [
@@ -77,23 +123,26 @@ export const skillGroups = [
 		]
 	},
 	{
+		"title": "Engineering Platforms",
+		"items": [
+			"Distributed, event-driven systems",
+			"Microservices, APIs, Frontends, and Backends",
+			"Cloud, Hybrid and on-prem infrastructure",
+			"DB, APIs, messaging, and data integration",
+			"Microservices, Spring Boot, React, and Node.js",
+			"Azure, AWS, GCP, Kafka, IBM MQ, Redis, Varnish, Solr, Elasticsearch/Open Search, and more",
+			"Splunk, Grafana"
+		]
+	},
+	{
 		"title": "Automation and Tools",
 		"items": [
 			"Java, Selenium, Cucumber, TestNG, Gradle",
+			"Typescript, Playwright",
 			"REST Assured, API, database, and end-to-end automation",
 			"Kafka, IBM MQ, AWS SQS, and queue validation",
 			"Jenkins, CI/CD automation, and regression health",
 			"JMeter, Locust, Lighthouse"
-		]
-	},
-	{
-		"title": "Engineering Platforms",
-		"items": [
-			"Distributed, event-driven systems",
-			"Hybrid cloud and on-prem infrastructure",
-			"Oracle DB, APIs, messaging, and data integration",
-			"Microservices, Spring Boot, React, and Node.js",
-			"Azure, AWS, GCP, Kafka, Redis, Solr, Elasticsearch"
 		]
 	},
 	{
@@ -104,12 +153,20 @@ export const skillGroups = [
 			"QE capability-building plans",
 			"Scrum and Kanban delivery",
 			"Leadership reporting and dashboarding",
-			"Manual QA to automation-first coaching"
+			"Manual QA to automation-first coaching",
+			"In-sprint automation-first coaching",
+			"Test automation strategy and roadmap",
+			"Release readiness and quality gates",
+			"Release delivery and monitoring",
+			"Release rollback and recovery",
+			"Release post-mortem and root cause analysis"
 		]
 	},
 	{
-		"title": "FinTech Domain",
+		"title": "Domain Experience",
 		"items": [
+			"ECommerce platforms, customer journeys, orders, checkout, and operational workflows",
+			"Supply chain management, fulfillment, inventory, warehouse, and logistics flows",
 			"Securities lending and post-trade workflows",
 			"Trading, settlements, rerates, and regulatory flows",
 			"NGT, ECS, 1Source, PTS, and related platforms",
@@ -121,39 +178,70 @@ export const skillGroups = [
 
 export const transformations = [
 	{
-		"title": "Platform QE Function at EquiLend",
-		"context": "EquiLend is forming a Platform Quality Engineering model to support standards, governance, maturity, and enablement across application teams.",
-		"impact": "Helping define the PQE charter, operating model, responsibilities, governance structure, and federated QE model."
+		"title": "Platform Quality Engineering",
+		"summary": "Helping establish a centralized Quality Engineering capability focused on governance, standards, maturity frameworks, automation strategy, metrics, and quality enablement across product teams.",
+		"tags": [
+			"Governance",
+			"Quality Strategy",
+			"Operating Model",
+			"Transformation"
+		],
+		"href": ""
 	},
 	{
-		"title": "India QE Capability Building",
-		"context": "The organization is scaling quality engineering capability in India with stronger automation ownership and engineering discipline.",
-		"impact": "Building the team through hiring, mentoring, onboarding practices, interview rubrics, and capability-building plans."
+		"title": "Quality Maturity Framework",
+		"summary": "Designing frameworks to assess test asset maturity, automation coverage, CI/CD adoption, reporting health, and overall quality engineering effectiveness across applications.",
+		"tags": [
+			"Maturity Models",
+			"Metrics",
+			"Assessment",
+			"Governance"
+		],
+		"href": ""
 	},
 	{
-		"title": "Quality Metrics and Dashboarding",
-		"context": "Leadership needs clearer visibility into automation coverage, release readiness, execution health, flaky tests, and quality trends.",
-		"impact": "Contributing to the Platform QE Dashboard vision and data-driven reporting across applications."
+		"title": "Engineering Platforms",
+		"summary": "Architecting dashboards, reporting systems, internal tools, and quality intelligence platforms that improve visibility, decision making, and engineering productivity.",
+		"tags": [
+			"Platform Engineering",
+			"Dashboards",
+			"Architecture",
+			"Productivity"
+		],
+		"href": ""
 	},
 	{
-		"title": "Automation Transformation",
-		"context": "A manual-heavy testing model was slowing coverage and release confidence.",
-		"impact": "Moved testing from 80% manual to 90% automation in six months, improving coverage and release velocity."
+		"title": "AI-Augmented Quality Engineering",
+		"summary": "Exploring practical applications of AI for test design, analysis, reporting, documentation, knowledge management, and engineering productivity.",
+		"tags": [
+			"AI",
+			"LLMs",
+			"Quality Engineering",
+			"Innovation"
+		],
+		"href": ""
 	},
 	{
-		"title": "Release Readiness Model",
-		"context": "Frontend, backend, and mobile releases needed tighter coordination and clearer success criteria.",
-		"impact": "Orchestrated 84 releases in four months with a 98% success rate and reduced rollback risk."
+		"title": "Automation Modernization",
+		"summary": "Driving automation strategy across UI, API, database, messaging, and end-to-end testing layers while improving maintainability, reliability, and engineering ownership.",
+		"tags": [
+			"Automation",
+			"Architecture",
+			"Quality Engineering",
+			"Strategy"
+		],
+		"href": ""
 	},
 	{
-		"title": "Performance and SEO Quality",
-		"context": "Product performance bottlenecks were affecting user experience and search outcomes.",
-		"impact": "Used Locust, JMeter, and Lighthouse to identify issues and contribute to an 8+ position search ranking improvement."
-	},
-	{
-		"title": "Cloud and Platform Modernization",
-		"context": "Legacy and fragmented infrastructure created cost, scale, and maintainability pressure.",
-		"impact": "Supported Azure, AWS, and on-prem consolidation work that produced roughly $15K monthly operational savings."
+		"title": "Team & Capability Building",
+		"summary": "Building and mentoring Quality Engineering teams while establishing technical standards, engineering culture, hiring frameworks, and capability development programs.",
+		"tags": [
+			"Leadership",
+			"Mentoring",
+			"Hiring",
+			"Engineering Culture"
+		],
+		"href": ""
 	}
 ];
 
@@ -242,6 +330,10 @@ export const contactLinks = [
 	{
 		"href": "mailto:adityamallela.1988@gmail.com",
 		"label": "adityamallela.1988@gmail.com"
+	},
+	{
+		"href": "tel:+917259984105",
+		"label": "+91 7259984105"
 	},
 	{
 		"href": "https://www.linkedin.com/in/aditya-mallela-b61aa84a/",

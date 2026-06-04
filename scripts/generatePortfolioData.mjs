@@ -23,18 +23,23 @@ const skillGroups = Object.entries(careerMaster.sections)
 const portfolioData = {
 	profile: profileData,
 	navLinks: [
-		{href: "#impact", label: "Impact"},
-		{href: "#skills", label: "Skills"},
+		{href: "#leadership", label: "Leadership"},
+		{href: "#focus", label: "Focus"},
+		{href: "#transformation", label: "Transformation"},
 		{href: "#experience", label: "Experience"},
+		{href: "#domain", label: "Domain"},
+		{href: "#technology", label: "Technology"},
 		{href: "#contact", label: "Contact"},
 	],
-	stats: pipeListToObjects(sectionBullets(profile, "Stats"), ["value", "label"]),
+	stats: pipeListToObjects(sectionBullets(profile, "Stats"), ["value", "label", "detail"]),
 	leadershipStrengths: sectionBullets(profile, "Leadership Strengths"),
+	currentFocus: pipeListToObjects(sectionBullets(profile, "Current Focus"), ["title", "description"]),
 	skillGroups,
 	transformations: caseStudyFiles.map(({frontmatter}) => ({
 		title: frontmatter.title,
-		context: frontmatter.context,
-		impact: frontmatter.impact,
+		summary: frontmatter.summary,
+		tags: frontmatter.tags ?? [],
+		href: frontmatter.href,
 	})),
 	experience: experienceFiles.map(({frontmatter, sections}) => ({
 		company: frontmatter.company,
@@ -47,6 +52,7 @@ const portfolioData = {
 	playbooks: sectionBullets(careerMaster, "Playbooks"),
 	contactLinks: [
 		{href: `mailto:${profileData.email}`, label: profileData.email},
+		...(profileData.phone ? [{href: `tel:${profileData.phone.replaceAll(" ", "")}`, label: profileData.phone}] : []),
 		{href: profileData.linkedin, label: "LinkedIn"},
 		{href: profileData.github, label: "GitHub"},
 	],

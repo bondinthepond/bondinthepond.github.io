@@ -11,21 +11,24 @@ This file captures reusable skill groups and portfolio themes. Keep this content
 - Traceability, quality baselines, and maturity assessment
 - Shift-left, risk-based testing, and test pyramid thinking
 
+## Skill Group: Engineering Platforms
+
+- Distributed, event-driven systems
+- Microservices, APIs, Frontends, and Backends
+- Cloud, Hybrid and on-prem infrastructure
+- DB, APIs, messaging, and data integration
+- Microservices, Spring Boot, React, and Node.js
+- Azure, AWS, GCP, Kafka, IBM MQ, Redis, Varnish, Solr, Elasticsearch/Open Search, and more
+- Splunk, Grafana
+
 ## Skill Group: Automation and Tools
 
 - Java, Selenium, Cucumber, TestNG, Gradle
+- Typescript, Playwright
 - REST Assured, API, database, and end-to-end automation
 - Kafka, IBM MQ, AWS SQS, and queue validation
 - Jenkins, CI/CD automation, and regression health
 - JMeter, Locust, Lighthouse
-
-## Skill Group: Engineering Platforms
-
-- Distributed, event-driven systems
-- Hybrid cloud and on-prem infrastructure
-- Oracle DB, APIs, messaging, and data integration
-- Microservices, Spring Boot, React, and Node.js
-- Azure, AWS, GCP, Kafka, Redis, Solr, Elasticsearch
 
 ## Skill Group: Product and Delivery
 
@@ -35,9 +38,17 @@ This file captures reusable skill groups and portfolio themes. Keep this content
 - Scrum and Kanban delivery
 - Leadership reporting and dashboarding
 - Manual QA to automation-first coaching
+- In-sprint automation-first coaching
+- Test automation strategy and roadmap
+- Release readiness and quality gates
+- Release delivery and monitoring
+- Release rollback and recovery
+- Release post-mortem and root cause analysis
 
-## Skill Group: FinTech Domain
+## Skill Group: Domain Experience
 
+- ECommerce platforms, customer journeys, orders, checkout, and operational workflows
+- Supply chain management, fulfillment, inventory, warehouse, and logistics flows
 - Securities lending and post-trade workflows
 - Trading, settlements, rerates, and regulatory flows
 - NGT, ECS, 1Source, PTS, and related platforms

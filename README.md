@@ -52,6 +52,12 @@ Generate the default Markdown resume:
 npm run generate:resume
 ```
 
+Generate a PDF from the default Markdown resume:
+
+```bash
+npm run resume:pdf
+```
+
 Generate a focused resume:
 
 ```bash
@@ -64,7 +70,13 @@ Generate a resume from a job description:
 npm run generate:resume -- --job content/resume/job-description.example.txt --output content/resume/generated/targeted-resume.md
 ```
 
-The resume generator currently creates Markdown. The next natural step is adding DOCX/PDF export after the content is finalized.
+Then generate a PDF for that targeted resume:
+
+```bash
+npm run resume:pdf -- --input content/resume/generated/targeted-resume.md --output content/resume/generated/targeted-resume.pdf
+```
+
+The PDF generator uses Chrome or Edge in headless mode. If the browser is installed somewhere unusual, set `CHROME_PATH` to the browser executable.
 
 Generated resumes are written under `content/resume/generated/`, which is ignored by git so tailored resumes do not accidentally get committed.
 

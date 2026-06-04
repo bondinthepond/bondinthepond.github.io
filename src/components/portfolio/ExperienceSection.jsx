@@ -4,7 +4,7 @@ function ExperienceSection() {
 	return (
 		<section className="section" id="experience">
 			<div className="section-heading">
-				<p className="eyebrow">Experience</p>
+				<p className="eyebrow">Professional Experience</p>
 				<h2>Career timeline</h2>
 			</div>
 			<div className="experience-list">
