@@ -1,6 +1,6 @@
 ---
 company: Flipkart / TekSystems
-role: SDET
+role: SDET 2
 period: Aug 2015 - Apr 2017
 order: 2
 tags: [sdet, qa-process, ci-cd, java, mapstruct, ecommerce, logistics]

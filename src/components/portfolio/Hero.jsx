@@ -12,19 +12,28 @@ function Hero() {
 				</p>
 				<div className="hero-actions">
 					<a className="button button-primary" href={profile.resumePath} target="_blank" rel="noreferrer">
-						View Resume
+						Resume
+					</a>
+					<a className="button button-secondary" href="#transformation">
+						Transformation Portfolio
 					</a>
 					<a className="button button-secondary" href="#experience">
-						Experience
+						Career Journey
 					</a>
 					<a className="button button-ghost" href="#technology">
-						Technology
+						Technical Depth
 					</a>
 				</div>
 			</div>
 			<aside className="hero-card" aria-label="Profile summary">
 				<p className="card-title">Current position</p>
 				<h2>{profile.currentPositionTitle}</h2>
+				{profile.currentPositionCompany && (
+					<p className="hero-card-company">{profile.currentPositionCompany}</p>
+				)}
+				{profile.currentPositionFocusLine && (
+					<p className="hero-card-focus">{profile.currentPositionFocusLine}</p>
+				)}
 				<p>
 					{profile.currentPositionSummary}
 				</p>

@@ -2,33 +2,89 @@
 
 This file captures reusable skill groups and portfolio themes. Keep this content broad and reusable across the website, resume, and future profile updates.
 
-## Skill Group: Quality Engineering
+## Skill Group: Platform Quality Engineering
 
-- Test strategy and planning
-- Xray / Jira-based test management
-- Defect triage and quality governance
-- Test data and environment management
-- Traceability, quality baselines, and maturity assessment
-- Shift-left, risk-based testing, and test pyramid thinking
+Building governance, maturity, standards, dashboards, and enablement models that improve quality consistency across product teams.
 
-## Skill Group: Engineering Platforms
+- Platform QE operating model
+- Federated QE governance and enablement
+- Quality maturity assessment
+- Automation strategy and standards
+- Release readiness models and quality gates
+- Quality dashboards, metrics, and leadership visibility
+- Test asset governance and transformation tracking
 
-- Distributed, event-driven systems
-- Microservices, APIs, Frontends, and Backends
-- Cloud, Hybrid and on-prem infrastructure
-- DB, APIs, messaging, and data integration
-- Microservices, Spring Boot, React, and Node.js
-- Azure, AWS, GCP, Kafka, IBM MQ, Redis, Varnish, Solr, Elasticsearch/Open Search, and more
-- Splunk, Grafana
+## Skill Group: Test Automation & Quality Engineering
 
-## Skill Group: Automation and Tools
+Designing automation ecosystems across UI, API, backend, database, messaging, and end-to-end validation layers.
 
-- Java, Selenium, Cucumber, TestNG, Gradle
-- Typescript, Playwright
-- REST Assured, API, database, and end-to-end automation
-- Kafka, IBM MQ, AWS SQS, and queue validation
-- Jenkins, CI/CD automation, and regression health
-- JMeter, Locust, Lighthouse
+- UI, API, backend, database, and end-to-end automation
+- Test pyramid strategy and shift-left validation
+- Framework design, maintainability, and reusability
+- Regression optimization and flaky test reduction
+- Test data and environment validation
+- CI-integrated automation execution
+- Selenium, Playwright, REST Assured, Cypress, Appium
+- Java, TypeScript, Python, Cucumber, TestNG, PyTest, Gradle
+
+## Skill Group: Distributed Systems & Integration Testing
+
+Validating complex workflows across APIs, queues, databases, services, and event-driven systems.
+
+- Event-driven workflow validation
+- Kafka, IBM MQ, and AWS SQS testing
+- Message payload inspection and correlation
+- API, database, queue, and backend validation
+- REST API, GraphQL, and WebSocket testing
+- Integration testing across microservices and data flows
+- Oracle DB, PostgreSQL, Redis, OpenSearch
+
+## Skill Group: Engineering Platforms & Internal Tools
+
+Building internal quality platforms, dashboards, and tools that improve engineering visibility and tester productivity.
+
+- Platform Quality Engineering dashboards
+- Quality intelligence and reporting systems
+- Kafka and MQ testing utilities
+- Automation result aggregation
+- Release readiness visibility
+- Internal tools for QE productivity
+- React, TypeScript, Java, Spring Boot, PostgreSQL, Flyway, Node.js
+
+## Skill Group: Cloud, CI/CD & Release Engineering
+
+Enabling reliable delivery through CI/CD quality gates, environment readiness, release validation, and cloud-aware quality practices.
+
+- CI/CD quality gates
+- Regression suite integration
+- Build and deployment validation
+- Environment readiness checks
+- Cloud and hybrid infrastructure validation
+- Release sanity, rollback risk assessment, and post-release checks
+- AWS, Azure, GCP, Jenkins, GitHub Actions, Artifactory, Git
+
+## Skill Group: Observability, Performance & Production Quality
+
+Connecting quality engineering with production confidence through monitoring, performance validation, and release feedback loops.
+
+- Production validation and monitoring support
+- Log analysis and release confidence checks
+- Performance, SEO, and customer-experience quality
+- Incident analysis and quality feedback loops
+- Splunk, Grafana, Pingdom
+- JMeter, Locust, Lighthouse, PageSpeed Insights, Google Search Console, SEMrush
+
+## Skill Group: AI-Assisted Quality Engineering
+
+Applying AI to practical quality engineering workflows while supporting responsible usage, governance, and productivity improvements.
+
+- AI-assisted test design and review
+- Test documentation and reporting workflows
+- Defect analysis and log summarization
+- Quality knowledge management
+- Responsible AI usage and governance
+- Tool evaluation for engineering productivity
+- Claude, Cursor, and LLM-assisted engineering workflows
 
 ## Skill Group: Product and Delivery
 

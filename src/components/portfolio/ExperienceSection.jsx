@@ -1,5 +1,9 @@
 import {experience} from "../../data/portfolioData";
 
+function companyAccentClass(company) {
+	return `career-accent-${company.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}`;
+}
+
 function ExperienceSection() {
 	const latestExperienceFirst = [...experience].reverse();
 
@@ -23,7 +27,11 @@ function ExperienceSection() {
 					const hasTechnologyGroups = job.technologyGroups.length > 0;
 
 					return (
-						<details className="career-card" key={`${job.company}-${job.period}`} open={index === 0}>
+						<details
+							className={`career-card ${companyAccentClass(job.company)}`}
+							key={`${job.company}-${job.period}`}
+							open={index === 0}
+						>
 							<summary>
 								<div className="career-marker">
 									<span>{String(index + 1).padStart(2, "0")}</span>

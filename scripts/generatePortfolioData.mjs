@@ -13,6 +13,18 @@ const experienceFiles = await readMarkdownFolder(resolveFromRoot("content", "exp
 const caseStudyFiles = await readMarkdownFolder(resolveFromRoot("content", "case-studies"));
 
 const profileData = profile.frontmatter;
+
+function sectionSummary(section) {
+	if (!section?.text) {
+		return "";
+	}
+
+	return section.text
+		.split(/\r?\n/)
+		.map((line) => line.trim())
+		.find((line) => line && !line.startsWith("- ") && !line.startsWith("### ")) ?? "";
+}
+
 const skillGroups = Object.entries(careerMaster.sections)
 	.filter(([title]) => title.startsWith("Skill Group: "))
 	.map(([title, section]) => ({
@@ -73,6 +85,22 @@ const portfolioData = {
 		tags: frontmatter.tags ?? [],
 		href: frontmatter.href,
 	})),
+	caseStudies: caseStudyFiles
+		.filter(({frontmatter, sections}) => frontmatter.slug && Object.keys(sections).length > 1)
+		.map(({frontmatter, sections}) => ({
+			title: frontmatter.title,
+			slug: frontmatter.slug,
+			summary: frontmatter.summary,
+			impact: frontmatter.impact,
+			tags: frontmatter.tags ?? [],
+			sections: Object.entries(sections)
+				.filter(([title, section]) => title !== "Intro" && (section.text || section.bullets.length))
+				.map(([title, section]) => ({
+					title,
+					text: section.text,
+					bullets: section.bullets,
+				})),
+		})),
 	experience: experienceFiles.map(({frontmatter, sections}) => ({
 		company: frontmatter.company,
 		role: frontmatter.role,

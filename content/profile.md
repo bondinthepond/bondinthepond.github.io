@@ -6,8 +6,10 @@ title: Quality Engineering Transformation Leader
 heroFocusLine: Platform QE | AI-Enabled Engineering | Quality at Scale
 subheadline: Building modern Quality Engineering organizations through Platform QE, automation strategy, governance, metrics, and engineering excellence.
 resumePath: /resume/Aditya_Resume.pdf
-currentPositionTitle: Associate Director, Quality Engineering Manager | Platform Quality
-currentPositionSummary: Leading the Platform Quality Engineering team at EquiLend, focused on QE capability building, federated quality governance, automation strategy, metrics, AI-assisted quality engineering, and engineering platform quality.
+currentPositionTitle: Associate Director, Quality Engineering Manager
+currentPositionCompany: EquiLend
+currentPositionFocusLine: Platform Quality Engineering | Quality Transformation | AI-Assisted QE
+currentPositionSummary: Leading Platform Quality Engineering initiatives focused on QE capability building, federated quality governance, automation strategy, metrics, engineering platforms, and AI-enabled quality practices.
 email: adityamallela.1988@gmail.com
 phone: +91 7259984105
 linkedin: https://www.linkedin.com/in/aditya-mallela-b61aa84a/

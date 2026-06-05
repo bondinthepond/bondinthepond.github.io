@@ -8,8 +8,10 @@ export const profile = {
 	"heroFocusLine": "Platform QE | AI-Enabled Engineering | Quality at Scale",
 	"subheadline": "Building modern Quality Engineering organizations through Platform QE, automation strategy, governance, metrics, and engineering excellence.",
 	"resumePath": "/resume/Aditya_Resume.pdf",
-	"currentPositionTitle": "Associate Director, Quality Engineering Manager | Platform Quality",
-	"currentPositionSummary": "Leading the Platform Quality Engineering team at EquiLend, focused on QE capability building, federated quality governance, automation strategy, metrics, AI-assisted quality engineering, and engineering platform quality.",
+	"currentPositionTitle": "Associate Director, Quality Engineering Manager",
+	"currentPositionCompany": "EquiLend",
+	"currentPositionFocusLine": "Platform Quality Engineering | Quality Transformation | AI-Assisted QE",
+	"currentPositionSummary": "Leading Platform Quality Engineering initiatives focused on QE capability building, federated quality governance, automation strategy, metrics, engineering platforms, and AI-enabled quality practices.",
 	"email": "adityamallela.1988@gmail.com",
 	"phone": "+91 7259984105",
 	"linkedin": "https://www.linkedin.com/in/aditya-mallela-b61aa84a/",
@@ -148,37 +150,87 @@ export const domainExpertise = [
 
 export const skillGroups = [
 	{
-		"title": "Quality Engineering",
+		"title": "Platform Quality Engineering",
 		"items": [
-			"Test strategy and planning",
-			"Xray / Jira-based test management",
-			"Defect triage and quality governance",
-			"Test data and environment management",
-			"Traceability, quality baselines, and maturity assessment",
-			"Shift-left, risk-based testing, and test pyramid thinking"
+			"Platform QE operating model",
+			"Federated QE governance and enablement",
+			"Quality maturity assessment",
+			"Automation strategy and standards",
+			"Release readiness models and quality gates",
+			"Quality dashboards, metrics, and leadership visibility",
+			"Test asset governance and transformation tracking"
 		]
 	},
 	{
-		"title": "Engineering Platforms",
+		"title": "Test Automation & Quality Engineering",
 		"items": [
-			"Distributed, event-driven systems",
-			"Microservices, APIs, Frontends, and Backends",
-			"Cloud, Hybrid and on-prem infrastructure",
-			"DB, APIs, messaging, and data integration",
-			"Microservices, Spring Boot, React, and Node.js",
-			"Azure, AWS, GCP, Kafka, IBM MQ, Redis, Varnish, Solr, Elasticsearch/Open Search, and more",
-			"Splunk, Grafana"
+			"UI, API, backend, database, and end-to-end automation",
+			"Test pyramid strategy and shift-left validation",
+			"Framework design, maintainability, and reusability",
+			"Regression optimization and flaky test reduction",
+			"Test data and environment validation",
+			"CI-integrated automation execution",
+			"Selenium, Playwright, REST Assured, Cypress, Appium",
+			"Java, TypeScript, Python, Cucumber, TestNG, PyTest, Gradle"
 		]
 	},
 	{
-		"title": "Automation and Tools",
+		"title": "Distributed Systems & Integration Testing",
 		"items": [
-			"Java, Selenium, Cucumber, TestNG, Gradle",
-			"Typescript, Playwright",
-			"REST Assured, API, database, and end-to-end automation",
-			"Kafka, IBM MQ, AWS SQS, and queue validation",
-			"Jenkins, CI/CD automation, and regression health",
-			"JMeter, Locust, Lighthouse"
+			"Event-driven workflow validation",
+			"Kafka, IBM MQ, and AWS SQS testing",
+			"Message payload inspection and correlation",
+			"API, database, queue, and backend validation",
+			"REST API, GraphQL, and WebSocket testing",
+			"Integration testing across microservices and data flows",
+			"Oracle DB, PostgreSQL, Redis, OpenSearch"
+		]
+	},
+	{
+		"title": "Engineering Platforms & Internal Tools",
+		"items": [
+			"Platform Quality Engineering dashboards",
+			"Quality intelligence and reporting systems",
+			"Kafka and MQ testing utilities",
+			"Automation result aggregation",
+			"Release readiness visibility",
+			"Internal tools for QE productivity",
+			"React, TypeScript, Java, Spring Boot, PostgreSQL, Flyway, Node.js"
+		]
+	},
+	{
+		"title": "Cloud, CI/CD & Release Engineering",
+		"items": [
+			"CI/CD quality gates",
+			"Regression suite integration",
+			"Build and deployment validation",
+			"Environment readiness checks",
+			"Cloud and hybrid infrastructure validation",
+			"Release sanity, rollback risk assessment, and post-release checks",
+			"AWS, Azure, GCP, Jenkins, GitHub Actions, Artifactory, Git"
+		]
+	},
+	{
+		"title": "Observability, Performance & Production Quality",
+		"items": [
+			"Production validation and monitoring support",
+			"Log analysis and release confidence checks",
+			"Performance, SEO, and customer-experience quality",
+			"Incident analysis and quality feedback loops",
+			"Splunk, Grafana, Pingdom",
+			"JMeter, Locust, Lighthouse, PageSpeed Insights, Google Search Console, SEMrush"
+		]
+	},
+	{
+		"title": "AI-Assisted Quality Engineering",
+		"items": [
+			"AI-assisted test design and review",
+			"Test documentation and reporting workflows",
+			"Defect analysis and log summarization",
+			"Quality knowledge management",
+			"Responsible AI usage and governance",
+			"Tool evaluation for engineering productivity",
+			"Claude, Cursor, and LLM-assisted engineering workflows"
 		]
 	},
 	{
@@ -223,7 +275,7 @@ export const transformations = [
 			"Operating Model",
 			"Transformation"
 		],
-		"href": ""
+		"href": "#/case-studies/platform-quality-engineering"
 	},
 	{
 		"title": "Quality Governance & Maturity",
@@ -287,6 +339,81 @@ export const transformations = [
 	}
 ];
 
+export const caseStudies = [
+	{
+		"title": "Platform Quality Engineering",
+		"slug": "platform-quality-engineering",
+		"summary": "Helping establish a centralized Quality Engineering capability focused on governance, standards, maturity frameworks, automation strategy, metrics, and quality enablement across product teams.",
+		"impact": "Improved consistency, visibility, and quality ownership across product teams.",
+		"tags": [
+			"Governance",
+			"Quality Strategy",
+			"Operating Model",
+			"Transformation"
+		],
+		"sections": [
+			{
+				"title": "Case Study Draft",
+				"text": "This case study captures the journey of helping establish and operationalize a Platform Quality Engineering capability focused on standards, governance, maturity, enablement, metrics, automation strategy, and quality visibility across product teams.",
+				"bullets": []
+			},
+			{
+				"title": "Problem Space",
+				"text": "- Quality practices varied across teams and applications.\n- Test assets, automation coverage, reporting, and release readiness needed clearer baselines.\n- Engineering and leadership teams needed better visibility into quality maturity and delivery confidence.\n- Quality Engineering needed to move from execution-focused QA toward standards, enablement, and engineering-led ownership.",
+				"bullets": [
+					"Quality practices varied across teams and applications.",
+					"Test assets, automation coverage, reporting, and release readiness needed clearer baselines.",
+					"Engineering and leadership teams needed better visibility into quality maturity and delivery confidence.",
+					"Quality Engineering needed to move from execution-focused QA toward standards, enablement, and engineering-led ownership."
+				]
+			},
+			{
+				"title": "Approach",
+				"text": "- Helped define the Platform Quality Engineering charter, operating model, responsibilities, and governance approach.\n- Supported a federated model where QEs remain embedded in scrum teams while PQE provides standards, maturity frameworks, tooling, and enablement.\n- Established quality baselines across test cases, automation, documentation, CI/CD adoption, reporting health, and release readiness.\n- Connected quality strategy with practical engineering execution through dashboards, automation guidance, and platform tooling.",
+				"bullets": [
+					"Helped define the Platform Quality Engineering charter, operating model, responsibilities, and governance approach.",
+					"Supported a federated model where QEs remain embedded in scrum teams while PQE provides standards, maturity frameworks, tooling, and enablement.",
+					"Established quality baselines across test cases, automation, documentation, CI/CD adoption, reporting health, and release readiness.",
+					"Connected quality strategy with practical engineering execution through dashboards, automation guidance, and platform tooling."
+				]
+			},
+			{
+				"title": "Platform Capabilities",
+				"text": "- Quality maturity assessment model\n- Test case and test asset governance\n- Automation strategy and test pyramid alignment\n- Release readiness metrics\n- Platform QE dashboard vision\n- QE enablement tools for event-driven and integration-heavy systems\n- AI-assisted QE use cases for analysis, reporting, documentation, and productivity",
+				"bullets": [
+					"Quality maturity assessment model",
+					"Test case and test asset governance",
+					"Automation strategy and test pyramid alignment",
+					"Release readiness metrics",
+					"Platform QE dashboard vision",
+					"QE enablement tools for event-driven and integration-heavy systems",
+					"AI-assisted QE use cases for analysis, reporting, documentation, and productivity"
+				]
+			},
+			{
+				"title": "Impact",
+				"text": "- Created stronger consistency in how quality engineering is assessed and discussed.\n- Improved leadership visibility into QE maturity, test health, automation coverage, and release readiness.\n- Helped teams move toward engineering-led quality ownership and shift-left validation.\n- Established a platform-oriented QE foundation that can scale across products and teams.",
+				"bullets": [
+					"Created stronger consistency in how quality engineering is assessed and discussed.",
+					"Improved leadership visibility into QE maturity, test health, automation coverage, and release readiness.",
+					"Helped teams move toward engineering-led quality ownership and shift-left validation.",
+					"Established a platform-oriented QE foundation that can scale across products and teams."
+				]
+			},
+			{
+				"title": "Future Expansion",
+				"text": "- Add specific before-and-after maturity examples.\n- Add dashboard screenshots or anonymized wireframes.\n- Add examples of quality metrics and scorecards.\n- Add lessons learned from implementing federated QE governance.",
+				"bullets": [
+					"Add specific before-and-after maturity examples.",
+					"Add dashboard screenshots or anonymized wireframes.",
+					"Add examples of quality metrics and scorecards.",
+					"Add lessons learned from implementing federated QE governance."
+				]
+			}
+		]
+	}
+];
+
 export const experience = [
 	{
 		"company": "Accenture",
@@ -313,7 +440,7 @@ export const experience = [
 	},
 	{
 		"company": "Flipkart / TekSystems",
-		"role": "SDET",
+		"role": "SDET 2",
 		"period": "Aug 2015 - Apr 2017",
 		"domain": "E-Commerce logistics and supply chain delivery systems",
 		"companyContext": "Flipkart is one of India's largest e-commerce platforms. My work focused on Ekart, its supply chain and logistics wing, across order management, returns, warehouse management, last-mile delivery, orchestration, and logistics workflows.",
