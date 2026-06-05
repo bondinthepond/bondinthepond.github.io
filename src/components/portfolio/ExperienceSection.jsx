@@ -41,7 +41,10 @@ function ExperienceSection() {
 											<p className="role">{job.role}</p>
 											<h3>{job.company}</h3>
 										</div>
-										<p className="period">{job.period}</p>
+										<div className="career-summary-actions">
+											<p className="period">{job.period}</p>
+											<span className="career-expand-indicator" aria-hidden="true">+</span>
+										</div>
 									</div>
 									{job.domain && <p className="career-domain">{job.domain}</p>}
 									{hasImpactAreas && (

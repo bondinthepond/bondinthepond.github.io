@@ -1265,6 +1265,35 @@ h3 {
 	gap: 18px;
 }
 
+.career-summary-actions {
+	display: flex;
+	align-items: flex-start;
+	gap: 12px;
+}
+
+.career-expand-indicator {
+	display: inline-flex;
+	flex: 0 0 auto;
+	width: 34px;
+	height: 34px;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid color-mix(in srgb, var(--career-accent-start) 32%, #cfdce8);
+	border-radius: 9px;
+	background: #fff;
+	color: var(--career-accent-start);
+	font-size: 1.2rem;
+	font-weight: 900;
+	line-height: 1;
+	transition: background 160ms ease, color 160ms ease, transform 160ms ease;
+}
+
+.career-card[open] .career-expand-indicator {
+	background: linear-gradient(135deg, var(--career-accent-start), var(--career-accent-mid), var(--career-accent-end));
+	color: #fff;
+	transform: rotate(45deg);
+}
+
 .career-domain {
 	margin-bottom: 14px;
 	color: var(--teal);
@@ -1680,6 +1709,11 @@ h3 {
 	.career-title-row {
 		display: grid;
 		gap: 4px;
+	}
+
+	.career-summary-actions {
+		align-items: center;
+		justify-content: space-between;
 	}
 
 	.career-details {
