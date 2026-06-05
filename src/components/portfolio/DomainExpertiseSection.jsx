@@ -1,26 +1,29 @@
-import {skillGroups} from "../../data/portfolioData";
+import {domainExpertise} from "../../data/portfolioData";
 
 function DomainExpertiseSection() {
-	const domainGroup = skillGroups.find((group) => group.title === "Domain Experience");
-
-	if (!domainGroup) {
-		return null;
-	}
-
 	return (
 		<section className="section" id="domain">
-			<div className="section-heading">
+			<div className="section-heading domain-heading">
 				<p className="eyebrow">Domain Expertise</p>
-				<h2>Business context across complex product ecosystems.</h2>
+				<h2>Quality leadership across complex business domains.</h2>
+				<p>
+					Experience across domains where quality depends on workflow complexity,
+					integrations, data accuracy, and reliable outcomes.
+				</p>
 			</div>
-			<article className="expertise-card">
-				<h3>{domainGroup.title}</h3>
-				<ul>
-					{domainGroup.items.map((item) => (
-						<li key={item}>{item}</li>
-					))}
-				</ul>
-			</article>
+			<div className="domain-card-grid">
+				{domainExpertise.map((domain) => (
+					<article className="domain-card" key={domain.title}>
+						<h3>{domain.title}</h3>
+						<p>{domain.description}</p>
+						<div className="domain-tags" aria-label={`${domain.title} tags`}>
+							{domain.tags.map((tag) => (
+								<span key={tag}>{tag}</span>
+							))}
+						</div>
+					</article>
+				))}
+			</div>
 		</section>
 	);
 }

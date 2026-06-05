@@ -11,27 +11,29 @@ function TransformationsSection() {
 					automation strategy, and transformation initiatives. These are key areas where I have driven change and delivered impact.
 				</p>
 			</div>
-			<div className="transformation-journey">
+			<div className="transformation-carousel" aria-label="Transformation portfolio carousel">
 				{transformations.map((item, index) => (
-					<article className="transformation-story" key={item.title}>
-						<div className="journey-marker">
-							<span>{String(index + 1).padStart(2, "0")}</span>
+					<a
+						className="portfolio-card"
+						href={item.href || "#transformation"}
+						key={item.title}
+						aria-label={`Read more about ${item.title}`}
+					>
+						<span className="portfolio-number">{String(index + 1).padStart(2, "0")}</span>
+						<h3>{item.title}</h3>
+						<p>{item.summary}</p>
+						{item.impact && (
+							<p className="story-impact">
+								<strong>Impact:</strong> {item.impact}
+							</p>
+						)}
+						<div className="story-tags" aria-label={`${item.title} focus areas`}>
+							{item.tags.map((tag) => (
+								<span key={tag}>{tag}</span>
+							))}
 						</div>
-						<div className="story-content">
-							<h3>{item.title}</h3>
-							<p>{item.summary}</p>
-							<div className="story-tags" aria-label={`${item.title} focus areas`}>
-								{item.tags.map((tag) => (
-									<span key={tag}>{tag}</span>
-								))}
-							</div>
-							{item.href ? (
-								<a className="story-link" href={item.href}>Learn More</a>
-							) : (
-								<span className="story-link muted">Case study coming soon</span>
-							)}
-						</div>
-					</article>
+						<span className="story-link">Click to read more</span>
+					</a>
 				))}
 			</div>
 		</section>

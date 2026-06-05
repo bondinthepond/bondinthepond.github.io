@@ -55,6 +55,12 @@ This file captures reusable skill groups and portfolio themes. Keep this content
 - Message-heavy validation across Kafka, MQ, SQS, APIs, and databases
 - Quality engineering for complex business-critical workflows
 
+## Domain Expertise
+
+- Securities Lending & Post-Trade | Current FinTech domain experience across securities lending, rerates, settlements, post-trade processing, market data, and event-driven workflows. | Capital Markets, Post-Trade, Rerates, Settlements, Event-Driven Systems
+- E-Commerce & Digital Marketing | Experience with consumer platforms, coupon systems, promotions, rebate products, publisher integrations, SEO, performance, and customer experience quality. | Coupons, Promotions, Rebates, SEO, Customer Experience
+- Supply Chain & Logistics | Experience across order management, returns, warehouse management, fulfillment, delivery operations, orchestration, and last-mile logistics workflows. | OMS, Returns, Warehouse, Fulfillment, Last Mile
+
 ## Playbooks
 
 - Quality maturity assessment

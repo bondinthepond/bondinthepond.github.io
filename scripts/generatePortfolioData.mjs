@@ -20,6 +20,32 @@ const skillGroups = Object.entries(careerMaster.sections)
 		items: section.bullets,
 	}));
 
+function sectionSubsections(section) {
+	if (!section?.text) {
+		return [];
+	}
+
+	const subsections = [];
+	let current = null;
+
+	for (const line of section.text.split(/\r?\n/)) {
+		const heading = line.match(/^###\s+(.+)$/);
+		const bullet = line.match(/^-\s+(.+)$/);
+
+		if (heading) {
+			current = {title: heading[1].trim(), items: []};
+			subsections.push(current);
+			continue;
+		}
+
+		if (bullet && current) {
+			current.items.push(bullet[1].trim());
+		}
+	}
+
+	return subsections.filter((item) => item.items.length > 0);
+}
+
 const portfolioData = {
 	profile: profileData,
 	navLinks: [
@@ -34,10 +60,16 @@ const portfolioData = {
 	stats: pipeListToObjects(sectionBullets(profile, "Stats"), ["value", "label", "detail"]),
 	leadershipStrengths: sectionBullets(profile, "Leadership Strengths"),
 	currentFocus: pipeListToObjects(sectionBullets(profile, "Current Focus"), ["title", "description"]),
+	domainExpertise: pipeListToObjects(sectionBullets(careerMaster, "Domain Expertise"), ["title", "description", "tags"])
+		.map((domain) => ({
+			...domain,
+			tags: domain.tags.split(",").map((tag) => tag.trim()).filter(Boolean),
+		})),
 	skillGroups,
 	transformations: caseStudyFiles.map(({frontmatter}) => ({
 		title: frontmatter.title,
 		summary: frontmatter.summary,
+		impact: frontmatter.impact,
 		tags: frontmatter.tags ?? [],
 		href: frontmatter.href,
 	})),
@@ -46,8 +78,16 @@ const portfolioData = {
 		role: frontmatter.role,
 		team: frontmatter.team,
 		period: frontmatter.period,
+		domain: frontmatter.domain,
+		companyContext: frontmatter.companyContext,
+		technology: frontmatter.technology,
+		technologyGroups: pipeListToObjects(sections["Technology Landscape"]?.bullets ?? [], ["title", "items"]),
+		applications: sections["Applications & Products Supported"]?.bullets ?? [],
+		impactAreas: frontmatter.impactAreas ?? frontmatter.tags ?? [],
 		summary: frontmatter.summary,
 		highlights: sections.Highlights?.bullets ?? [],
+		areasOfImpact: sectionSubsections(sections["Areas of Impact"]),
+		accomplishments: sections.Contributions?.bullets ?? [],
 	})),
 	playbooks: sectionBullets(careerMaster, "Playbooks"),
 	contactLinks: [
