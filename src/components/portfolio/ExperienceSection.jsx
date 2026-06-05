@@ -30,7 +30,6 @@ function ExperienceSection() {
 						<details
 							className={`career-card ${companyAccentClass(job.company)}`}
 							key={`${job.company}-${job.period}`}
-							open={index === 0}
 						>
 							<summary>
 								<div className="career-marker">

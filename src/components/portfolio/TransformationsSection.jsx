@@ -2,7 +2,7 @@ import {transformations} from "../../data/portfolioData";
 import {useState} from "react";
 
 function TransformationsSection() {
-	const [openCard, setOpenCard] = useState(0);
+	const [openCard, setOpenCard] = useState(-1);
 
 	return (
 		<section className="section transformation-section" id="transformation">

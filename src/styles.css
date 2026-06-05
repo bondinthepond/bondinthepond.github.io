@@ -1700,16 +1700,113 @@ h3 {
 }
 
 @media (max-width: 520px) {
-	.nav-links {
-		width: 100%;
+	.site-shell {
+		width: min(100% - 14px, 1180px);
+		padding-bottom: 36px;
 	}
 
-	.nav-links a {
-		padding-left: 0;
+	.top-nav {
+		justify-content: center;
+		margin-bottom: 10px;
+		padding: 10px 12px;
+		border-radius: 10px;
+	}
+
+	.brand {
+		width: 100%;
+		text-align: center;
+	}
+
+	.nav-links {
+		display: none;
+	}
+
+	h1 {
+		font-size: clamp(2.05rem, 12vw, 3rem);
+		line-height: 1.02;
+	}
+
+	h2 {
+		font-size: clamp(1.45rem, 8vw, 2rem);
+	}
+
+	.hero {
+		padding: 22px;
+		border-radius: 12px;
+	}
+
+	.hero-focus-line,
+	.hero-card-focus {
+		width: 100%;
+		text-align: center;
+		justify-content: center;
 	}
 
 	.hero-actions .button {
 		width: 100%;
+	}
+
+	.section,
+	.stats-section,
+	.contact-section,
+	.case-study-article {
+		padding: 20px;
+		border-radius: 12px;
+	}
+
+	.transformation-carousel {
+		grid-auto-columns: minmax(252px, calc(100vw - 54px));
+		gap: 12px;
+		margin-right: -20px;
+		padding-right: 20px;
+	}
+
+	.portfolio-card {
+		min-height: 230px;
+		padding: 18px;
+	}
+
+	.portfolio-card.is-open {
+		min-height: 390px;
+	}
+
+	.portfolio-card-trigger {
+		grid-template-columns: 44px minmax(0, 1fr) 34px;
+		gap: 10px;
+	}
+
+	.portfolio-number {
+		width: 44px;
+		height: 44px;
+	}
+
+	.story-tags span,
+	.impact-tags span,
+	.domain-tags span {
+		font-size: 0.76rem;
+	}
+
+	.career-summary,
+	.career-details {
+		padding: 18px;
+	}
+
+	.career-marker span {
+		width: 52px;
+		height: 52px;
+	}
+
+	.career-title-row {
+		gap: 8px;
+	}
+
+	.period {
+		margin-bottom: 0;
+	}
+
+	.detail-disclosure > summary {
+		align-items: flex-start;
+		flex-direction: column;
 	}
 
 	.stat-card {
@@ -2100,12 +2197,13 @@ h3 {
 	}
 
 	.technology-section {
-		padding: 22px;
-		border-radius: 14px;
+		padding: 20px;
+		border-radius: 12px;
 	}
 
 	.technology-node-card {
 		min-height: auto;
+		padding: 18px;
 	}
 
 	.technology-layer-row {
@@ -2118,6 +2216,8 @@ h3 {
 
 	.technology-blueprint-step {
 		min-height: auto;
+		grid-template-columns: 38px minmax(0, 1fr);
+		padding: 14px;
 	}
 
 	.technology-chip-cloud span {
