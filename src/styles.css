@@ -1825,6 +1825,11 @@ h3 {
 		padding: 18px;
 	}
 
+	.career-summary {
+		padding-right: 18px;
+		padding-bottom: 58px;
+	}
+
 	.career-marker span {
 		width: 52px;
 		height: 52px;
@@ -1836,6 +1841,19 @@ h3 {
 
 	.period {
 		margin-bottom: 0;
+	}
+
+	.career-summary-actions {
+		display: block;
+	}
+
+	.career-expand-indicator {
+		position: absolute;
+		right: 10px;
+		bottom: 10px;
+		width: 36px;
+		height: 36px;
+		box-shadow: 0 10px 22px rgba(15, 35, 55, 0.08);
 	}
 
 	.detail-disclosure > summary {
