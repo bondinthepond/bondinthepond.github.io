@@ -4,8 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "generate": "node scripts/generatePortfolioData.mjs && node scripts/generateResume.mjs",
+    "generate": "node scripts/generatePortfolioData.mjs && node scripts/generateKnowledgeData.mjs && node scripts/generateResume.mjs",
     "generate:portfolio": "node scripts/generatePortfolioData.mjs",
+    "generate:knowledge": "node scripts/generateKnowledgeData.mjs",
     "generate:resume": "node scripts/generateResume.mjs",
     "resume:pdf": "node scripts/resumeMarkdownToPdf.mjs",
     "dev": "vite",

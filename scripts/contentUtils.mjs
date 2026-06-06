@@ -26,6 +26,30 @@ export async function readMarkdownFolder(folderPath) {
 	return entries.sort((a, b) => Number(a.frontmatter.order ?? 999) - Number(b.frontmatter.order ?? 999));
 }
 
+export async function readMarkdownTree(folderPath, rootPath = folderPath) {
+	const entries = await readdir(folderPath, {withFileTypes: true});
+	const results = [];
+
+	for (const entry of entries) {
+		const entryPath = path.join(folderPath, entry.name);
+
+		if (entry.isDirectory()) {
+			results.push(...await readMarkdownTree(entryPath, rootPath));
+			continue;
+		}
+
+		if (entry.name.endsWith(".md")) {
+			results.push({
+				file: entry.name,
+				path: path.relative(rootPath, entryPath),
+				...(await readMarkdownFile(entryPath)),
+			});
+		}
+	}
+
+	return results.sort((a, b) => Number(a.frontmatter.order ?? 999) - Number(b.frontmatter.order ?? 999));
+}
+
 export function parseMarkdown(raw) {
 	const {frontmatter, body} = splitFrontmatter(raw);
 	return {

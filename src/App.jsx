@@ -1,5 +1,8 @@
 import "./styles.css";
 import {useEffect, useState} from "react";
+import KnowledgeLibraryPage from "./components/knowledge/KnowledgeLibraryPage";
+import KnowledgeNotePage from "./components/knowledge/KnowledgeNotePage";
+import KnowledgeTopicPage from "./components/knowledge/KnowledgeTopicPage";
 import CaseStudiesSection from "./components/portfolio/CaseStudiesSection";
 import ContactSection from "./components/portfolio/ContactSection";
 import CurrentFocusSection from "./components/portfolio/CurrentFocusSection";
@@ -19,6 +22,8 @@ function getRoute() {
 function App() {
 	const [route, setRoute] = useState(getRoute);
 	const caseStudyMatch = route.match(/^case-studies\/(.+)$/);
+	const knowledgeTopicMatch = route.match(/^knowledge\/topics\/(.+)$/);
+	const knowledgeNoteMatch = route.match(/^knowledge\/(.+)$/);
 
 	useEffect(() => {
 		const handleHashChange = () => setRoute(getRoute());
@@ -30,6 +35,30 @@ function App() {
 		return (
 			<div className="site-shell">
 				<CaseStudiesSection slug={caseStudyMatch[1]}/>
+			</div>
+		);
+	}
+
+	if (knowledgeTopicMatch) {
+		return (
+			<div className="site-shell">
+				<KnowledgeTopicPage slug={knowledgeTopicMatch[1]}/>
+			</div>
+		);
+	}
+
+	if (knowledgeNoteMatch) {
+		return (
+			<div className="site-shell">
+				<KnowledgeNotePage slug={knowledgeNoteMatch[1]}/>
+			</div>
+		);
+	}
+
+	if (route === "knowledge") {
+		return (
+			<div className="site-shell">
+				<KnowledgeLibraryPage/>
 			</div>
 		);
 	}
